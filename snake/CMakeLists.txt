@@ -11,7 +11,7 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 find_package(raylib REQUIRED)
 
 add_executable(snake
-        src/main.c
+        src/game.c
         src/snake.c
 )
 

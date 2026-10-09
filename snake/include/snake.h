@@ -18,12 +18,12 @@ typedef struct {
     unsigned int dir: 2;
 } Snake;
 
-Snake *createSnake();
-void moveSnake(Snake *);
+Snake *snake_init();
+void snake_move(Snake *);
 void drawSnake(Snake *);
 void growSnake(Snake *);
 
-int addHead(Snake *s, Vector2 vec);
-Vector2 removeTail(Snake *s);
+int snake_addHead(Snake *s, Vector2 vec);
+Vector2 snake_removeTail(Snake *s);
 
 #endif
